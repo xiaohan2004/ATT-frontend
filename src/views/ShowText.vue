@@ -28,7 +28,7 @@ const typeText = (newText) => {
 // 每 5 秒请求接口
 const pollLatestText = async () => {
   try {
-    const response = await axios.get('http://localhost:18081/api/latest')
+    const response = await axios.get('http://47.98.147.82:18081/api/latest')
     const latest = response.data || ''
 
     if (latest && latest !== fullText) {
