@@ -9,7 +9,7 @@ const translatedText = ref('')
 const isSummarizing = ref(false)
 const isTranslating = ref(false)
 const activeRightPanel = ref('summary') // 'summary' or 'translation'
-const selectedSourceLang = ref('auto') // 源语言
+const selectedSourceLang = ref('cn') // 源语言
 const selectedTargetLang = ref('en') // 目标语言
 const translationHistory = ref([]) // 翻译历史
 const showTranslateDialog = ref(false)
@@ -22,7 +22,7 @@ let currentIndex = 0  // 打字机效果索引
 // 支持的语言列表（部分，按你的表格可自行补充）
 const supportedLanguages = [
   { code: 'auto', name: '自动检测', flag: '🌐' },
-  { code: 'cn', name: '汉语普通话', flag: '🇨🇳' },
+  { code: 'cn', name: '中文（简体）', flag: '🇨🇳' },
   { code: 'en', name: '英语', flag: '🇺🇸' },
   { code: 'yue', name: '粤语', flag: '🇨🇳' },
   { code: 'ja', name: '日语', flag: '🇯🇵' },
